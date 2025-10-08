@@ -1,2 +1,2 @@
 # Stagewise-crop-yield-prediction-with-multisource-functional-indices
-Yield, indices data, and scripts for reproducibility
+Yield (response variable), indices (covariates) data, and scripts for reproducibility cross data preprocessing, (hyper)parameter tuning, and out-of-sample estimation.
