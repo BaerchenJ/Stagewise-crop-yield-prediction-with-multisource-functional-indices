@@ -3,7 +3,7 @@ Yield (response variable), indices (covariates) data, and scripts for reproducib
 
 
       Period   |        Data        |     Source    |   URL   
-----------------------------------------------------------------------------------------------------------------------------------------------
+
     1980-2022  |        yield       |      NASS     |  https://quickstats.nass.usda.gov/
 
     1980-2022  |       weather      |  Daymet V4.R  |  https://www.earthdata.nasa.gov/data/catalog/ornl-cloud-daymet-daily-v4r1-2129-4.1
