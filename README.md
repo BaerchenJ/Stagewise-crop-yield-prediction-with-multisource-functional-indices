@@ -16,4 +16,4 @@ Yield (response variable), indices (covariates) data, and scripts for reproducib
 
     2018-2022  |  satellite imagery |    HLS V2.0   |  https://hls.gsfc.nasa.gov/hls-data/
 
-For the details of data preprocessing procedure, please refer to the manuscript Section 3 Data and study area. The scripts of data preprocessing can be found in the folder named "Data-preprocess".
+For the details of data preprocessing procedure, please refer to the manuscript Section 3 Data and study area. The scripts of data preprocessing can be found in the folder named "Data-preprocess". "ALLRUN" and "Illinois_shp" under "Data-preprocess_Illisoy" are of large size. In case you are interested in raw data preprocessing, please contact me, and I will send you these two folders.
