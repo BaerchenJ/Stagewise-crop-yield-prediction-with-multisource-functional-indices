@@ -3,17 +3,17 @@ Yield (response variable), indices (covariates) data, and scripts for reproducib
 
 
       Period   |        Data        |     Source    |   URL   
-_____________________________________________________________________________________________________________________________________________
+----------------------------------------------------------------------------------------------------------------------------------------------
     1980-2022  |        yield       |      NASS     |  https://quickstats.nass.usda.gov/
-_____________________________________________________________________________________________________________________________________________
+
     1980-2022  |       weather      |  Daymet V4.R  |  https://www.earthdata.nasa.gov/data/catalog/ornl-cloud-daymet-daily-v4r1-2129-4.1
-_____________________________________________________________________________________________________________________________________________
+
     2015-2022  |   soil moisture    |    SMAP V1.0  |  https://smap.jpl.nasa.gov/data/
-_____________________________________________________________________________________________________________________________________________
+
     2015-2022  |   crop progress    |      NASS     |  https://www.nass.usda.gov/Research_and_Science/Crop_Progress_Gridded_Layers/index.php
-_____________________________________________________________________________________________________________________________________________
+
     2018-2022  |     crop mask      |      NASS     |  https://croplandcros.scinet.usda.gov/
-_____________________________________________________________________________________________________________________________________________
+
     2018-2022  |  satellite imagery |    HLS V2.0   |  https://hls.gsfc.nasa.gov/hls-data/
 
 For the details of data preprocessing procedure, please refer to the manuscript Section 3 Data and study area. The scripts of data preprocessing can be found in the folder named "Data-preprocess".
