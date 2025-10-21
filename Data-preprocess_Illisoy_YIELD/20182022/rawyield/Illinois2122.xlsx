@@ -1,0 +1,12624 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">
+@page rotate{size:landscape;}
+body {page: rotate;}
+
+table.ltable {
+border: 1px solid #777;
+border-spacing:opx;
+border-collapse: collapse;
+width:100%;
+
+}
+tr.alt {
+
+}
+
+td.ltable  {
+border: 1px solid #777;
+padding-left:3px;
+font: 10px "Trebuchet MS", Verdana, Arial, Helvetica,
+        sans-serif;
+}
+
+th.ltable  {
+border: 1px solid #777;
+font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica,
+        sans-serif;
+background:#CCC;
+
+
+
+}
+
+#header {
+display:inline;
+background-color : #ffffff;
+}
+
+#leftheaderimg {
+float : left;
+width : 100px;
+}
+
+
+#bodyheader {
+  height: 35px;
+  background-color: #336699;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#bodytitle { 
+  font-size:24px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:lighter;
+  position: fixed;      
+  display:inline;
+  margin-left: 10px;
+  line-height: 27px;
+  padding-top:4px;
+  color: #fff;
+ }
+
+
+input.menu2Link { 
+  border : 1px solid #fff;
+display:inline;
+} 
+
+.menu2Link {
+background-color : transparent;
+height : 25px;
+border : 0 solid #a00;
+color : #FFFFFF;
+font-weight : bold;
+text-align : center;
+text-decoration : none;
+text-transform : capitalize;
+padding-right : 5px;
+padding-left : 5px;
+padding-bottom: 0px;
+margin-top:11px;
+#margin-top:12px;
+margin-right:5px;
+bottom:0px;
+display:inline;
+float:left;
+}
+.menu2Link:hover {
+background-color : #FFF;
+border : 0 solid #101010;
+color : #336699;
+}
+
+
+#menuOuter {
+border : 0 solid #aaa;
+display : block;
+width : 100%;
+background-color : #fff;
+font-weight : bold;
+}
+
+#menu2 {
+border : 0 solid #000;
+position : absolute;
+right : 20px;
+display : inline;
+#top:85px;
+}
+
+.menu2-button-far-left {
+display : inline;
+float : left;
+/* background-image : url('/static/images/menu/inactive_far_left.gif'); */
+/* background-repeat : no-repeat; */
+/* background-position : left 0%; */
+}
+
+.menu2-button-right {
+display : inline;
+float : left;
+/* background-image : url('/static/images/menu/inactive_right.gif'); */
+/* background-repeat : no-repeat; */
+/* background-position : right 0%; */
+}
+
+</style>
+ 
+
+ 
+
+ <title>USDA/NASS QuickStats Ad-hoc Query Tool</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Emulate7">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+
+
+</head><body>
+<div id="header">
+    <div id="leftheaderimg" align="left">
+        <img alt="National Agricultural Statistics Service" src="Illinois2122_files/masthead_left.gif" width="388" hspace="5" height="53">
+    </div>
+    <div id="rightheaderimg" align="right">
+        <img alt="National Agricultural Statistics Service" src="Illinois2122_files/masthead_right.gif" width="233" hspace="25" height="53">
+    </div>
+</div>
+  <div id="bodyheader">
+
+     <span id="bodytitle">Quick Stats</span> 
+
+      <div id="menuOuter">
+	
+	    <div id="menu2">
+	    
+	    	<div class="menu2-button-far-left">
+		<form id="home" method="Post" action="https://quickstats.nass.usda.gov/" dojotype="dijit.form.Form">
+	   
+			<input type="submit" tabindex="0" value="Home" name="index" onclick="" class="menu2Link">
+		</form>
+
+        </div>
+		
+		
+	    	<div class="menu2-button-far-left">
+		<form id="recent_stats" method="Post" action="https://quickstats.nass.usda.gov/recent_stats" dojotype="dijit.form.Form">
+	   
+			<input type="submit" tabindex="1" value="Recent Statistics" name="recent_stats" onclick="" class="menu2Link">
+		</form>
+
+        </div>
+		
+		
+	    	<div class="menu2-button-far-left">
+		<form id="developers" method="Post" action="https://quickstats.nass.usda.gov/api" dojotype="dijit.form.Form">
+	   
+			<input type="submit" tabindex="2" value="developers" name="developers" onclick="" class="menu2Link">
+		</form>
+
+        </div>
+		
+		
+	    	<div class="menu2-button-far-left">
+		<form id="help" method="Post" action="https://quickstats.nass.usda.gov/tutorials" dojotype="dijit.form.Form">
+	   
+			<input type="submit" tabindex="3" value="Help" name="help" onclick="" class="menu2Link">
+		</form>
+
+        </div>
+		
+		
+
+
+		</div>
+    
+    </div>
+ </div>
+ 
+ <br clear="all">
+
+<table class="ltable">
+	<tbody><tr class="ltable">
+		
+			<th class="ltable" scope="col">Program</th>
+		
+			<th class="ltable" scope="col">Year</th>
+		
+			<th class="ltable" scope="col">Period</th>
+		
+			<th class="ltable" scope="col">Week Ending</th>
+		
+			<th class="ltable" scope="col">Geo Level</th>
+		
+			<th class="ltable" scope="col">State</th>
+		
+			<th class="ltable" scope="col">State ANSI</th>
+		
+			<th class="ltable" scope="col">Ag District</th>
+		
+			<th class="ltable" scope="col">Ag District Code</th>
+		
+			<th class="ltable" scope="col">County</th>
+		
+			<th class="ltable" scope="col">County ANSI</th>
+		
+			<th class="ltable" scope="col">Zip Code</th>
+		
+			<th class="ltable" scope="col">Region</th>
+		
+			<th class="ltable" scope="col">watershed_code</th>
+		
+			<th class="ltable" scope="col">Watershed</th>
+		
+			<th class="ltable" scope="col">Commodity</th>
+		
+			<th class="ltable" scope="col">Data Item</th>
+		
+			<th class="ltable" scope="col">Domain</th>
+		
+			<th class="ltable" scope="col">Domain Category</th>
+		
+			<th class="ltable" scope="col">Value</th>
+		
+			<th class="ltable" scope="col">CV (%)</th>
+		
+	</tr>
+
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">99
+				</td>
+				
+				<td class="ltable">OTHER COUNTIES
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">60.6
+				</td>
+				
+				<td class="ltable">01.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">DE WITT
+				</td>
+				
+				<td class="ltable">039
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">68
+				</td>
+				
+				<td class="ltable">02.70
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">LOGAN
+				</td>
+				
+				<td class="ltable">107
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">71.8
+				</td>
+				
+				<td class="ltable">01.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">MACON
+				</td>
+				
+				<td class="ltable">115
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">73.8
+				</td>
+				
+				<td class="ltable">01.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">MARSHALL
+				</td>
+				
+				<td class="ltable">123
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">64.1
+				</td>
+				
+				<td class="ltable">02.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">MASON
+				</td>
+				
+				<td class="ltable">125
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">62.6
+				</td>
+				
+				<td class="ltable">01.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">MCLEAN
+				</td>
+				
+				<td class="ltable">113
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">68.8
+				</td>
+				
+				<td class="ltable">02.00
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">MENARD
+				</td>
+				
+				<td class="ltable">129
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.9
+				</td>
+				
+				<td class="ltable">03.40
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">PEORIA
+				</td>
+				
+				<td class="ltable">143
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">64
+				</td>
+				
+				<td class="ltable">02.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">STARK
+				</td>
+				
+				<td class="ltable">175
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">70.8
+				</td>
+				
+				<td class="ltable">01.70
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">TAZEWELL
+				</td>
+				
+				<td class="ltable">179
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">71
+				</td>
+				
+				<td class="ltable">01.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">WOODFORD
+				</td>
+				
+				<td class="ltable">203
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">69.1
+				</td>
+				
+				<td class="ltable">00.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">CHAMPAIGN
+				</td>
+				
+				<td class="ltable">019
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">69.4
+				</td>
+				
+				<td class="ltable">01.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">FORD
+				</td>
+				
+				<td class="ltable">053
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">66.7
+				</td>
+				
+				<td class="ltable">01.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">IROQUOIS
+				</td>
+				
+				<td class="ltable">075
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">63.8
+				</td>
+				
+				<td class="ltable">01.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">KANKAKEE
+				</td>
+				
+				<td class="ltable">091
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">59.7
+				</td>
+				
+				<td class="ltable">02.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">LIVINGSTON
+				</td>
+				
+				<td class="ltable">105
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">63.5
+				</td>
+				
+				<td class="ltable">02.40
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">PIATT
+				</td>
+				
+				<td class="ltable">147
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">74.2
+				</td>
+				
+				<td class="ltable">02.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">VERMILION
+				</td>
+				
+				<td class="ltable">183
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.6
+				</td>
+				
+				<td class="ltable">02.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">CLARK
+				</td>
+				
+				<td class="ltable">023
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">61.3
+				</td>
+				
+				<td class="ltable">03.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">CLAY
+				</td>
+				
+				<td class="ltable">025
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">57.3
+				</td>
+				
+				<td class="ltable">03.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">CRAWFORD
+				</td>
+				
+				<td class="ltable">033
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">61.8
+				</td>
+				
+				<td class="ltable">02.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">CUMBERLAND
+				</td>
+				
+				<td class="ltable">035
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.2
+				</td>
+				
+				<td class="ltable">01.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">DOUGLAS
+				</td>
+				
+				<td class="ltable">041
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">69
+				</td>
+				
+				<td class="ltable">01.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">EDGAR
+				</td>
+				
+				<td class="ltable">045
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.9
+				</td>
+				
+				<td class="ltable">02.00
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">EFFINGHAM
+				</td>
+				
+				<td class="ltable">049
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">59.9
+				</td>
+				
+				<td class="ltable">01.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">JASPER
+				</td>
+				
+				<td class="ltable">079
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">55.8
+				</td>
+				
+				<td class="ltable">03.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">LAWRENCE
+				</td>
+				
+				<td class="ltable">101
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">58
+				</td>
+				
+				<td class="ltable">02.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">MARION
+				</td>
+				
+				<td class="ltable">121
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">54.3
+				</td>
+				
+				<td class="ltable">05.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">MOULTRIE
+				</td>
+				
+				<td class="ltable">139
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">65.7
+				</td>
+				
+				<td class="ltable">02.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">RICHLAND
+				</td>
+				
+				<td class="ltable">159
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">56.1
+				</td>
+				
+				<td class="ltable">03.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">SHELBY
+				</td>
+				
+				<td class="ltable">173
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.1
+				</td>
+				
+				<td class="ltable">01.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">BOONE
+				</td>
+				
+				<td class="ltable">007
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">62.2
+				</td>
+				
+				<td class="ltable">01.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">DE KALB
+				</td>
+				
+				<td class="ltable">037
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">64.9
+				</td>
+				
+				<td class="ltable">02.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">GRUNDY
+				</td>
+				
+				<td class="ltable">063
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">63.1
+				</td>
+				
+				<td class="ltable">02.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">KANE
+				</td>
+				
+				<td class="ltable">089
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">64.4
+				</td>
+				
+				<td class="ltable">02.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">LA SALLE
+				</td>
+				
+				<td class="ltable">099
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">65.7
+				</td>
+				
+				<td class="ltable">01.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">LAKE
+				</td>
+				
+				<td class="ltable">097
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">57.3
+				</td>
+				
+				<td class="ltable">04.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">WILL
+				</td>
+				
+				<td class="ltable">197
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">57.2
+				</td>
+				
+				<td class="ltable">03.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">BUREAU
+				</td>
+				
+				<td class="ltable">011
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.5
+				</td>
+				
+				<td class="ltable">01.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">CARROLL
+				</td>
+				
+				<td class="ltable">015
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">68.9
+				</td>
+				
+				<td class="ltable">02.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">HENRY
+				</td>
+				
+				<td class="ltable">073
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">66.8
+				</td>
+				
+				<td class="ltable">02.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">JO DAVIESS
+				</td>
+				
+				<td class="ltable">085
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">62.6
+				</td>
+				
+				<td class="ltable">04.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">LEE
+				</td>
+				
+				<td class="ltable">103
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">66.8
+				</td>
+				
+				<td class="ltable">02.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">MERCER
+				</td>
+				
+				<td class="ltable">131
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">65
+				</td>
+				
+				<td class="ltable">01.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">OGLE
+				</td>
+				
+				<td class="ltable">141
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.6
+				</td>
+				
+				<td class="ltable">02.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">PUTNAM
+				</td>
+				
+				<td class="ltable">155
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">64.6
+				</td>
+				
+				<td class="ltable">02.70
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">ROCK ISLAND
+				</td>
+				
+				<td class="ltable">161
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">66.3
+				</td>
+				
+				<td class="ltable">02.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">STEPHENSON
+				</td>
+				
+				<td class="ltable">177
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">62.3
+				</td>
+				
+				<td class="ltable">04.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">WHITESIDE
+				</td>
+				
+				<td class="ltable">195
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">66.4
+				</td>
+				
+				<td class="ltable">01.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">WINNEBAGO
+				</td>
+				
+				<td class="ltable">201
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">62.8
+				</td>
+				
+				<td class="ltable">02.70
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">EDWARDS
+				</td>
+				
+				<td class="ltable">047
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">53.5
+				</td>
+				
+				<td class="ltable">05.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">FRANKLIN
+				</td>
+				
+				<td class="ltable">055
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">47
+				</td>
+				
+				<td class="ltable">03.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">GALLATIN
+				</td>
+				
+				<td class="ltable">059
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">55.3
+				</td>
+				
+				<td class="ltable">04.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">HAMILTON
+				</td>
+				
+				<td class="ltable">065
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">50.2
+				</td>
+				
+				<td class="ltable">02.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">JEFFERSON
+				</td>
+				
+				<td class="ltable">081
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">48.1
+				</td>
+				
+				<td class="ltable">02.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">MASSAC
+				</td>
+				
+				<td class="ltable">127
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">02.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">SALINE
+				</td>
+				
+				<td class="ltable">165
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">52.8
+				</td>
+				
+				<td class="ltable">03.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">WABASH
+				</td>
+				
+				<td class="ltable">185
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">58.1
+				</td>
+				
+				<td class="ltable">02.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">WAYNE
+				</td>
+				
+				<td class="ltable">191
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">56.4
+				</td>
+				
+				<td class="ltable">03.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">WHITE
+				</td>
+				
+				<td class="ltable">193
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">54.5
+				</td>
+				
+				<td class="ltable">02.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">ALEXANDER
+				</td>
+				
+				<td class="ltable">003
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">51.3
+				</td>
+				
+				<td class="ltable">02.40
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">CLINTON
+				</td>
+				
+				<td class="ltable">027
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">54.6
+				</td>
+				
+				<td class="ltable">02.40
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">JACKSON
+				</td>
+				
+				<td class="ltable">077
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">51.1
+				</td>
+				
+				<td class="ltable">03.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">JOHNSON
+				</td>
+				
+				<td class="ltable">087
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">45.1
+				</td>
+				
+				<td class="ltable">04.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">MONROE
+				</td>
+				
+				<td class="ltable">133
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">53.1
+				</td>
+				
+				<td class="ltable">03.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">PERRY
+				</td>
+				
+				<td class="ltable">145
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">43.4
+				</td>
+				
+				<td class="ltable">02.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">PULASKI
+				</td>
+				
+				<td class="ltable">153
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">53.5
+				</td>
+				
+				<td class="ltable">03.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">RANDOLPH
+				</td>
+				
+				<td class="ltable">157
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">50.3
+				</td>
+				
+				<td class="ltable">03.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">ST CLAIR
+				</td>
+				
+				<td class="ltable">163
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">53.6
+				</td>
+				
+				<td class="ltable">03.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">UNION
+				</td>
+				
+				<td class="ltable">181
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">48
+				</td>
+				
+				<td class="ltable">04.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">WASHINGTON
+				</td>
+				
+				<td class="ltable">189
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">50.5
+				</td>
+				
+				<td class="ltable">03.00
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">WILLIAMSON
+				</td>
+				
+				<td class="ltable">199
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">45.9
+				</td>
+				
+				<td class="ltable">03.40
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">ADAMS
+				</td>
+				
+				<td class="ltable">001
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">61.2
+				</td>
+				
+				<td class="ltable">04.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">BROWN
+				</td>
+				
+				<td class="ltable">009
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">64.4
+				</td>
+				
+				<td class="ltable">01.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">FULTON
+				</td>
+				
+				<td class="ltable">057
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">62.5
+				</td>
+				
+				<td class="ltable">02.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">HANCOCK
+				</td>
+				
+				<td class="ltable">067
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.6
+				</td>
+				
+				<td class="ltable">02.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">HENDERSON
+				</td>
+				
+				<td class="ltable">071
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.2
+				</td>
+				
+				<td class="ltable">02.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">KNOX
+				</td>
+				
+				<td class="ltable">095
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67
+				</td>
+				
+				<td class="ltable">01.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">MCDONOUGH
+				</td>
+				
+				<td class="ltable">109
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">66.3
+				</td>
+				
+				<td class="ltable">02.00
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">SCHUYLER
+				</td>
+				
+				<td class="ltable">169
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">63.1
+				</td>
+				
+				<td class="ltable">02.40
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">WARREN
+				</td>
+				
+				<td class="ltable">187
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">64.5
+				</td>
+				
+				<td class="ltable">03.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">BOND
+				</td>
+				
+				<td class="ltable">005
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">58.6
+				</td>
+				
+				<td class="ltable">02.40
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">CALHOUN
+				</td>
+				
+				<td class="ltable">013
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">57.8
+				</td>
+				
+				<td class="ltable">02.40
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">CASS
+				</td>
+				
+				<td class="ltable">017
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">64.6
+				</td>
+				
+				<td class="ltable">03.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">CHRISTIAN
+				</td>
+				
+				<td class="ltable">021
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">69.5
+				</td>
+				
+				<td class="ltable">01.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">GREENE
+				</td>
+				
+				<td class="ltable">061
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">66.6
+				</td>
+				
+				<td class="ltable">03.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">JERSEY
+				</td>
+				
+				<td class="ltable">083
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">63.2
+				</td>
+				
+				<td class="ltable">03.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">MACOUPIN
+				</td>
+				
+				<td class="ltable">117
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">65.1
+				</td>
+				
+				<td class="ltable">01.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">MADISON
+				</td>
+				
+				<td class="ltable">119
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">59.6
+				</td>
+				
+				<td class="ltable">02.00
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">MONTGOMERY
+				</td>
+				
+				<td class="ltable">135
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">68.6
+				</td>
+				
+				<td class="ltable">01.40
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">MORGAN
+				</td>
+				
+				<td class="ltable">137
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">01.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">SANGAMON
+				</td>
+				
+				<td class="ltable">167
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">72.7
+				</td>
+				
+				<td class="ltable">01.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2022
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">SCOTT
+				</td>
+				
+				<td class="ltable">171
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">72.1
+				</td>
+				
+				<td class="ltable">01.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">99
+				</td>
+				
+				<td class="ltable">OTHER COUNTIES
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">65.6
+				</td>
+				
+				<td class="ltable">00.70
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">DE WITT
+				</td>
+				
+				<td class="ltable">039
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">70.7
+				</td>
+				
+				<td class="ltable">01.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">MACON
+				</td>
+				
+				<td class="ltable">115
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">74.4
+				</td>
+				
+				<td class="ltable">01.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">MASON
+				</td>
+				
+				<td class="ltable">125
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">64.7
+				</td>
+				
+				<td class="ltable">03.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">MCLEAN
+				</td>
+				
+				<td class="ltable">113
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.4
+				</td>
+				
+				<td class="ltable">03.00
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">MENARD
+				</td>
+				
+				<td class="ltable">129
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">66.4
+				</td>
+				
+				<td class="ltable">03.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">PEORIA
+				</td>
+				
+				<td class="ltable">143
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">69.7
+				</td>
+				
+				<td class="ltable">02.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">STARK
+				</td>
+				
+				<td class="ltable">175
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">70.1
+				</td>
+				
+				<td class="ltable">01.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">TAZEWELL
+				</td>
+				
+				<td class="ltable">179
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">70.8
+				</td>
+				
+				<td class="ltable">02.00
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">CENTRAL
+				</td>
+				
+				<td class="ltable">40
+				</td>
+				
+				<td class="ltable">WOODFORD
+				</td>
+				
+				<td class="ltable">203
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">68.1
+				</td>
+				
+				<td class="ltable">02.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">CHAMPAIGN
+				</td>
+				
+				<td class="ltable">019
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">75.3
+				</td>
+				
+				<td class="ltable">02.70
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">FORD
+				</td>
+				
+				<td class="ltable">053
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">66.7
+				</td>
+				
+				<td class="ltable">01.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">IROQUOIS
+				</td>
+				
+				<td class="ltable">075
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">57.9
+				</td>
+				
+				<td class="ltable">02.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">KANKAKEE
+				</td>
+				
+				<td class="ltable">091
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">61.7
+				</td>
+				
+				<td class="ltable">02.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">LIVINGSTON
+				</td>
+				
+				<td class="ltable">105
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">66
+				</td>
+				
+				<td class="ltable">02.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">PIATT
+				</td>
+				
+				<td class="ltable">147
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">77.3
+				</td>
+				
+				<td class="ltable">01.00
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST
+				</td>
+				
+				<td class="ltable">50
+				</td>
+				
+				<td class="ltable">VERMILION
+				</td>
+				
+				<td class="ltable">183
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.4
+				</td>
+				
+				<td class="ltable">01.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">CLARK
+				</td>
+				
+				<td class="ltable">023
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">65.5
+				</td>
+				
+				<td class="ltable">03.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">CLAY
+				</td>
+				
+				<td class="ltable">025
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">59.2
+				</td>
+				
+				<td class="ltable">03.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">CRAWFORD
+				</td>
+				
+				<td class="ltable">033
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">65
+				</td>
+				
+				<td class="ltable">01.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">EDGAR
+				</td>
+				
+				<td class="ltable">045
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">70.8
+				</td>
+				
+				<td class="ltable">03.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">EFFINGHAM
+				</td>
+				
+				<td class="ltable">049
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">64.7
+				</td>
+				
+				<td class="ltable">02.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">FAYETTE
+				</td>
+				
+				<td class="ltable">051
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">63.5
+				</td>
+				
+				<td class="ltable">02.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">LAWRENCE
+				</td>
+				
+				<td class="ltable">101
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">60.4
+				</td>
+				
+				<td class="ltable">02.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">MARION
+				</td>
+				
+				<td class="ltable">121
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">60.1
+				</td>
+				
+				<td class="ltable">02.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">MOULTRIE
+				</td>
+				
+				<td class="ltable">139
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">72.4
+				</td>
+				
+				<td class="ltable">01.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">EAST SOUTHEAST
+				</td>
+				
+				<td class="ltable">70
+				</td>
+				
+				<td class="ltable">SHELBY
+				</td>
+				
+				<td class="ltable">173
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.3
+				</td>
+				
+				<td class="ltable">02.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">BOONE
+				</td>
+				
+				<td class="ltable">007
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">69.2
+				</td>
+				
+				<td class="ltable">04.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">COOK
+				</td>
+				
+				<td class="ltable">031
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">45.8
+				</td>
+				
+				<td class="ltable">04.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">DE KALB
+				</td>
+				
+				<td class="ltable">037
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">63.9
+				</td>
+				
+				<td class="ltable">01.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">GRUNDY
+				</td>
+				
+				<td class="ltable">063
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">59.5
+				</td>
+				
+				<td class="ltable">02.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">KANE
+				</td>
+				
+				<td class="ltable">089
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.7
+				</td>
+				
+				<td class="ltable">02.40
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">KENDALL
+				</td>
+				
+				<td class="ltable">093
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">66.3
+				</td>
+				
+				<td class="ltable">03.70
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">LAKE
+				</td>
+				
+				<td class="ltable">097
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">50.3
+				</td>
+				
+				<td class="ltable">06.00
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHEAST
+				</td>
+				
+				<td class="ltable">20
+				</td>
+				
+				<td class="ltable">WILL
+				</td>
+				
+				<td class="ltable">197
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">58.4
+				</td>
+				
+				<td class="ltable">01.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">BUREAU
+				</td>
+				
+				<td class="ltable">011
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">66.4
+				</td>
+				
+				<td class="ltable">03.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">CARROLL
+				</td>
+				
+				<td class="ltable">015
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">68.6
+				</td>
+				
+				<td class="ltable">03.10
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">HENRY
+				</td>
+				
+				<td class="ltable">073
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">68.1
+				</td>
+				
+				<td class="ltable">02.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">JO DAVIESS
+				</td>
+				
+				<td class="ltable">085
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">58.7
+				</td>
+				
+				<td class="ltable">04.40
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">LEE
+				</td>
+				
+				<td class="ltable">103
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.6
+				</td>
+				
+				<td class="ltable">02.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">OGLE
+				</td>
+				
+				<td class="ltable">141
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">61.8
+				</td>
+				
+				<td class="ltable">03.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">PUTNAM
+				</td>
+				
+				<td class="ltable">155
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">62.2
+				</td>
+				
+				<td class="ltable">03.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">ROCK ISLAND
+				</td>
+				
+				<td class="ltable">161
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">64.6
+				</td>
+				
+				<td class="ltable">03.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">STEPHENSON
+				</td>
+				
+				<td class="ltable">177
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">64.5
+				</td>
+				
+				<td class="ltable">03.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">WHITESIDE
+				</td>
+				
+				<td class="ltable">195
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67
+				</td>
+				
+				<td class="ltable">01.70
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">NORTHWEST
+				</td>
+				
+				<td class="ltable">10
+				</td>
+				
+				<td class="ltable">WINNEBAGO
+				</td>
+				
+				<td class="ltable">201
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">56.9
+				</td>
+				
+				<td class="ltable">06.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">EDWARDS
+				</td>
+				
+				<td class="ltable">047
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">63.1
+				</td>
+				
+				<td class="ltable">03.70
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">FRANKLIN
+				</td>
+				
+				<td class="ltable">055
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">53.3
+				</td>
+				
+				<td class="ltable">01.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">GALLATIN
+				</td>
+				
+				<td class="ltable">059
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">62.5
+				</td>
+				
+				<td class="ltable">04.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">HARDIN
+				</td>
+				
+				<td class="ltable">069
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">50.6
+				</td>
+				
+				<td class="ltable">02.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">JEFFERSON
+				</td>
+				
+				<td class="ltable">081
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">47.7
+				</td>
+				
+				<td class="ltable">02.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">MASSAC
+				</td>
+				
+				<td class="ltable">127
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">52.5
+				</td>
+				
+				<td class="ltable">03.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">SALINE
+				</td>
+				
+				<td class="ltable">165
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">59.2
+				</td>
+				
+				<td class="ltable">04.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">WABASH
+				</td>
+				
+				<td class="ltable">185
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">60.8
+				</td>
+				
+				<td class="ltable">03.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHEAST
+				</td>
+				
+				<td class="ltable">90
+				</td>
+				
+				<td class="ltable">WHITE
+				</td>
+				
+				<td class="ltable">193
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">63.4
+				</td>
+				
+				<td class="ltable">03.00
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">ALEXANDER
+				</td>
+				
+				<td class="ltable">003
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">58.5
+				</td>
+				
+				<td class="ltable">03.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">CLINTON
+				</td>
+				
+				<td class="ltable">027
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">63.6
+				</td>
+				
+				<td class="ltable">02.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">JACKSON
+				</td>
+				
+				<td class="ltable">077
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">49.9
+				</td>
+				
+				<td class="ltable">05.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">JOHNSON
+				</td>
+				
+				<td class="ltable">087
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">43.8
+				</td>
+				
+				<td class="ltable">02.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">MONROE
+				</td>
+				
+				<td class="ltable">133
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">56.3
+				</td>
+				
+				<td class="ltable">02.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">PERRY
+				</td>
+				
+				<td class="ltable">145
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">53.2
+				</td>
+				
+				<td class="ltable">03.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">PULASKI
+				</td>
+				
+				<td class="ltable">153
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">56.8
+				</td>
+				
+				<td class="ltable">03.00
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">RANDOLPH
+				</td>
+				
+				<td class="ltable">157
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">55.3
+				</td>
+				
+				<td class="ltable">03.70
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">ST CLAIR
+				</td>
+				
+				<td class="ltable">163
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">59.6
+				</td>
+				
+				<td class="ltable">03.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">UNION
+				</td>
+				
+				<td class="ltable">181
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">44.5
+				</td>
+				
+				<td class="ltable">04.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">SOUTHWEST
+				</td>
+				
+				<td class="ltable">80
+				</td>
+				
+				<td class="ltable">WASHINGTON
+				</td>
+				
+				<td class="ltable">189
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">58.7
+				</td>
+				
+				<td class="ltable">02.20
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">BROWN
+				</td>
+				
+				<td class="ltable">009
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">59.4
+				</td>
+				
+				<td class="ltable">04.40
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">FULTON
+				</td>
+				
+				<td class="ltable">057
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">65.5
+				</td>
+				
+				<td class="ltable">01.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">HANCOCK
+				</td>
+				
+				<td class="ltable">067
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">67.3
+				</td>
+				
+				<td class="ltable">02.70
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">HENDERSON
+				</td>
+				
+				<td class="ltable">071
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">66.6
+				</td>
+				
+				<td class="ltable">03.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">KNOX
+				</td>
+				
+				<td class="ltable">095
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">68.4
+				</td>
+				
+				<td class="ltable">02.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST
+				</td>
+				
+				<td class="ltable">30
+				</td>
+				
+				<td class="ltable">SCHUYLER
+				</td>
+				
+				<td class="ltable">169
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">63.2
+				</td>
+				
+				<td class="ltable">04.90
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">BOND
+				</td>
+				
+				<td class="ltable">005
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">65
+				</td>
+				
+				<td class="ltable">02.50
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">CASS
+				</td>
+				
+				<td class="ltable">017
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">68.4
+				</td>
+				
+				<td class="ltable">02.30
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">CHRISTIAN
+				</td>
+				
+				<td class="ltable">021
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">71.2
+				</td>
+				
+				<td class="ltable">02.60
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">MACOUPIN
+				</td>
+				
+				<td class="ltable">117
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">70.8
+				</td>
+				
+				<td class="ltable">02.40
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">MADISON
+				</td>
+				
+				<td class="ltable">119
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">61
+				</td>
+				
+				<td class="ltable">03.80
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			
+			<tr class="alt"> 
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">SANGAMON
+				</td>
+				
+				<td class="ltable">167
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">72.1
+				</td>
+				
+				<td class="ltable">02.00
+				</td>
+				
+		
+			
+			</tr>
+		
+			
+			<tr class="ltable">
+			
+				
+				<td class="ltable">SURVEY
+				</td>
+				
+				<td class="ltable">2021
+				</td>
+				
+				<td class="ltable">YEAR
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">COUNTY
+				</td>
+				
+				<td class="ltable">ILLINOIS
+				</td>
+				
+				<td class="ltable">17
+				</td>
+				
+				<td class="ltable">WEST SOUTHWEST
+				</td>
+				
+				<td class="ltable">60
+				</td>
+				
+				<td class="ltable">SCOTT
+				</td>
+				
+				<td class="ltable">171
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">00000000
+				</td>
+				
+				<td class="ltable">
+				</td>
+				
+				<td class="ltable">SOYBEANS
+				</td>
+				
+				<td class="ltable">SOYBEANS - YIELD, MEASURED IN BU / ACRE
+				</td>
+				
+				<td class="ltable">TOTAL
+				</td>
+				
+				<td class="ltable">NOT SPECIFIED
+				</td>
+				
+				<td class="ltable">64.9
+				</td>
+				
+				<td class="ltable">02.10
+				</td>
+				
+		
+			
+			</tr>
+		
+
+
+	
+</tbody></table>
+
+
+</body></html>
